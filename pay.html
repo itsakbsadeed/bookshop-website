@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_folder/index.css">
+    <title>My Bookshop</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image_folder/logo.jpeg" alt="My Bookshop Logo">
+        </div>
+        <div class="title">
+            <h1>My Bookshop</h1>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <img src="image_folder/menuButton.svg" alt="Toggle Navigation Menu">
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="payment-container">
+            <h1>Payment Options</h1>
+            <hr>
+            
+            <div class="payment-form">
+                <div class="payment-method">
+                    <h2>Debit / Credit Card</h2>
+                    <img src="image_folder/creditCardLogos.png" alt="Accepted credit card types including Visa, Mastercard, and American Express image all in one">
+                </div>
+                
+                <form>
+                    <div class="payment-details">
+                        <div class="form-group">
+                            <label for="cardNumber">Card Number</label>
+                            <input type="number" id="cardNumber" name="cardNumber">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="expirationMonth">Expiration Date</label>
+                            <div>
+                                <select id="expirationMonth" name="expirationMonth">
+                                    <option value="">Month ▼</option>
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                                <select id="expirationYear" name="expirationYear">
+                                    <option value="">Year ▼</option>
+                                    <option value="2024">2024</option>
+                                    <option value="2025">2025</option>
+                                    <option value="2026">2026</option>
+                                    <option value="2027">2027</option>
+                                    <option value="2028">2028</option>
+                                    <option value="2029">2029</option>
+                                    <option value="2030">2030</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="securityCode">Security Code</label>
+                            <div>
+                                <input type="text" id="securityCode" name="securityCode" class="security-code">
+                                <p>(3-4 digit code normally on the back of your card)</p>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="continue-btn">Continue</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="js_folder/index.js"></script>
+        <script src="js_folder/pay.js"></script> 
+    </main>
+</body>
+</html>

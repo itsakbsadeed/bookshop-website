@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_folder/index.css">
+    <title>My Bookshop</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="image_folder/logo.jpeg" alt="My Bookshop Logo">
+        </div>
+        <div class="title">
+            <h1>My Bookshop</h1>
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <img src="image_folder/menuButton.svg" alt="Toggle Navigation Menu">
+        </div>
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="payment-container">
+            <h1>You have successfully entered your credit card details</h1>
+            <hr>
+            
+            <div class="payment-form">
+                <div class="payment-method">
+                    <h2>Debit / Credit Card</h2>
+                    <img src="image_folder/mastercard.png" alt="Mastercard logo" class="mastercard-logo image">
+                    <p>Your credit card number ends in **** **** **** <span id="lastFourDigits"></span></p>
+
+                </div>
+                
+                <div class="payment-details">
+                    <div class="form-group">
+                        <p>Thank you for your purchase! Your order will be processed shortly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="js_folder/index.js"></script>
+    <script src="js_folder/success.js"></script>
+</body>
+</html>

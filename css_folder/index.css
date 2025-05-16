@@ -1,0 +1,318 @@
+/*  Header section */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 15px;
+    background-color: #2c3e50;
+    color: #ffffff;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    border-radius: 5px;
+}
+
+.title {
+    color: #ecf0f1;
+    margin: 0 1rem;
+}
+
+.title h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+.menu-icon img {
+    width: 15px;
+    height: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+/* Body styles */
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Book container section */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #ecf0f1;
+    padding: 15px;
+}
+
+.book {
+    flex: 0 0 48%;
+    display: flex;
+    align-items: flex-start;
+    background-color: #ffffff;
+}
+
+.book img {
+    width: 30%;
+    margin-right: 15px;
+    height: 95%;
+    padding: 5px;
+}
+
+.book .book-content {
+    width: 70%;
+}
+
+.book .book-content h2 {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.book button {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 5px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.book button a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+/* Payment Form section */
+.payment-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.payment-container h1 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+}
+
+.payment-method h2 {
+    font-size: 1.1rem;
+    margin: 0;
+    white-space: nowrap;
+    color: #2c3e50;
+}
+
+.payment-method p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+.payment-method img {
+    max-width: 350px;
+    height: auto;
+}
+
+.payment-details {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.form-group label {
+    font-weight: bold;
+    width: 140px;
+    padding-top: 8px;
+    color: #2c3e50;
+}
+
+#cardNumber {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.security-code {
+    width: 100px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.form-group select {
+    padding: 8px 25px 8px 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 120px;
+}
+
+.form-group p {
+    margin-top: 5px;
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+.continue-btn {
+    background-color: #2980b9;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Styling for success page */
+.mastercard-logo {
+    width: 80px;
+    height: auto;
+    margin: 0 15px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    /* Header section*/
+    header {
+        padding: 1rem;
+    }
+
+    .menu-icon {
+        display: block;
+        order: 3;
+    }
+
+    .title {
+        order: 2;
+    }
+
+    nav {
+        width: 100%;
+        order: 4;
+    }
+
+    nav ul {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+
+    nav li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.5rem 0;
+    }
+
+    /* Book section */
+    .book {
+        flex: 90%;
+        background-color: #ffffff;
+        padding: 10px;
+    }
+
+    .book img {
+        width: 35%;
+    }
+
+    .book .book-content {
+        width: 60%;
+        background-color: #ffffff;
+    }
+
+    /* Payment Form section */
+    .payment-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .payment-method {
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .payment-method img {
+        max-width: 200px;
+        height: auto;
+    }
+    
+    .payment-method {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
+
+    .form-group {
+        flex-direction: column;
+    }
+
+    .form-group label {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .security-code {
+        width: 100px;
+    }
+}
+
+
+
+
